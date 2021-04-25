@@ -1,0 +1,16 @@
+
+<div class="row">
+    <div class="col-sm-6" *ngFor="let comment of commentList">
+      <div class="card" style="width: 400px; height: 200px;">
+        <div class="card-body">
+            <h5 class="card-title">ID : {{comment.id}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Title : {{comment.title}}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Body : {{comment.body}}</h6>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div> 
+  <button class="btn btn-primary" (click)="BackTo()" >Back</button>
+
+  {{errorMsg}}

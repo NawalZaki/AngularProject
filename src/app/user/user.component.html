@@ -1,0 +1,14 @@
+  <div class="row">
+    <div class="card" style="width: 18rem;" *ngFor="let user of userList"> 
+        <div class="card-body">
+            <h5 class="card-title">{{user.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{user.username}}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">{{user.email}}</h6>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+
+
+  {{errorMsg}}

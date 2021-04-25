@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-sm-6" *ngFor="let post of postList">
+      <div>  <!-- [class.selectedItem]="isSelected(post)"-->
+        <div  class="card" style="width: 400px; height: 200px;">
+          <div class="card-body">
+              <h5 class="card-title">{{post.id}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{post.Title}}</h6>
+              <h6 class="card-subtitle mb-2 text-muted">{{post.body}}</h6>
+              <button class="btn btn-primary"  (click)="goToComment(post)">Go To Comment</button>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  {{errorMsg}}
